@@ -1,0 +1,117 @@
+/* ----- COLOUR REFERENCES -----
+Green: #79b044
+Salmon: #dd5638
+Blue Gray: #3e4249
+*/
+
+/* ----- GENERAL ----- */
+:root {
+  --color-green: #79b044;
+  --color-salmon: #dd5638;
+  --color-blue_gray: #3e4249;
+  --color-dark: #101010;
+  --color-white: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 5rem;
+  background: url('../img/tile.jpg') top left repeat;
+}
+
+/* ----- GLOGAL ----- */
+h1,h2,h3,h4,h5,h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+/* overide bootstrap style */
+h1 {
+  font-size: 3em;
+}
+
+h1,h2 {
+  margin: 0 0 4rem;
+}
+
+h3 {
+  margin: 2rem 0;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+/* SECTION HERO */
+#hero {
+  background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
+  min-height: 50rem;
+  padding: 4rem 0;
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+#hero article{
+  width: 100%;
+  text-align: center;
+}
+
+#hero .hero-text {
+  margin-top: 3rem;
+}
+
+#price-timeline {
+  margin: 3rem 0 6rem;
+  text-align: center;
+}
+
+#price-timeline .price {
+  display: inline-block;
+  margin: 0 2% 0 0;
+  width: 30%;
+  background: var(--color-blue_gray);
+  padding: 1rem 2rem 3rem;
+  position: relative;
+  vertical-align: top;
+}
+
+#price-timeline .price.active {
+  background: var(--color-salmon);
+}
+
+#price-timeline .price span {
+    background: var(--color-dark);
+    display: block;
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    line-height: 7rem;
+    font-weight: bold;
+    font-size: 2.4rem;
+    border-radius: 100%;
+    -webkit-boder-radius: 100%;
+    -moz-border-radius: 100%;
+    position: absolute;
+    bottom: -3.5rem;
+    left: 50%;
+    margin-left: -3.5rem;
+}
+
+#price-timeline h4 {
+  margin: 0 0 1rem;
+}
+
+#price-timeline h4 small {
+  color: var(--color-white);
+  font-weight: bold;
+  display: block;
+}
