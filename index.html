@@ -110,8 +110,22 @@
   </section>
 
   <!-- OPT IN SECTION -->
-  <section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, enim. Illum aut commodi veritatis rem at. A nesciunt accusamus voluptatibus ipsa labore enim consequuntur dolores ipsum aliquam quaerat aperiam magnam delectus iste neque facilis asperiores fugit dolorem quibusdam hic, laudantium blanditiis quidem deleniti sequi! Eius, quod doloremque! Iste iure consequatur, dicta neque accusantium molestiae maxime quos dolores ullam quae recusandae provident eligendi distinctio vel animi, id necessitatibus illum totam voluptas suscipit quis. Architecto, laborum. Debitis assumenda obcaecati harum quo velit eveniet voluptatum ut in odio perferendis dolorem, natus minima nostrum at sed tenetur? Ratione veritatis quos similique quis assumenda sit, animi dolor tempore repellat quisquam, quae dolores numquam molestiae cumque deserunt consequuntur, corporis modi dolorum! Magni atque incidunt inventore, iste ducimus quas quisquam mollitia in at quis accusamus accusantium qui eum nam aperiam necessitatibus laboriosam sed corrupti labore aut ea commodi. Expedita ipsa accusantium praesentium facilis quas in laudantium voluptates ullam molestiae delectus laboriosam distinctio voluptate perspiciatis repellat quibusdam illum explicabo optio asperiores nesciunt vero, dolorum, nisi iusto quae illo. Quos corrupti earum accusamus aspernatur, consectetur repellat cumque nihil beatae amet. Assumenda consequatur optio quia veritatis possimus, nemo deserunt! Excepturi incidunt, facere explicabo assumenda hic, consequatur cumque delectus voluptatum commodi numquam asperiores iure, laboriosam velit? Quod ipsum laborum delectus ipsam nostrum fugiat maxime, saepe dicta iste officia provident atque quas qui praesentium incidunt quo tenetur corporis sed iure. Nostrum explicabo cum voluptate soluta ipsum reprehenderit est et omnis enim dolorem officiis incidunt ratione perferendis sunt, praesentium veniam iste ab hic animi laborum, in eos neque aliquam. At repellendus rem animi excepturi saepe? Repellendus quidem esse vitae, cupiditate tempora magnam fugit. Perferendis sit doloremque animi, consequuntur quas hic debitis repellendus soluta iste libero fuga incidunt corrupti! Eius error a consequuntur commodi eligendi illo aspernatur cum, rerum nisi. Ex nesciunt accusantium quisquam, iste ab ullam esse cupiditate quos illum. In nobis officia nisi cupiditate, accusamus quisquam blanditiis maxime mollitia odio? Est impedit molestiae at ipsam minus. Error animi sequi voluptate corrupti eius sunt eligendi rerum quod distinctio, deleniti fugiat ipsum laudantium, vero, ullam id adipisci ut ducimus. Quis velit laborum corporis consequatur, optio mollitia facilis perspiciatis laboriosam assumenda fuga aliquid explicabo autem sed nostrum tempora pariatur asperiores architecto saepe rerum vitae? Veniam vel nam doloribus ipsum facilis voluptas eveniet alias corrupti doloremque nisi, illo perferendis at excepturi ullam molestias unde culpa. Velit non voluptatibus tempore nobis laboriosam saepe laborum rem in, quibusdam voluptas sint. Aliquid laborum fuga tempore soluta facilis veritatis temporibus maiores ut, dicta culpa, ea debitis consectetur accusamus corrupti, quia suscipit eos pariatur officia. Ratione beatae natus hic? Debitis laudantium magni nihil nemo obcaecati nisi consequatur, non in dolorem architecto ad ducimus dignissimos! Aspernatur tenetur dignissimos cumque cum, fugit delectus odio? Maxime sunt repellat ratione. Repellendus nostrum provident accusamus delectus nulla molestiae facilis dignissimos est illo eligendi! Iste beatae dolore doloremque aspernatur ratione temporibus. Impedit cumque magnam temporibus! Eaque optio ipsum unde ipsa autem obcaecati fuga aspernatur suscipit quidem? Numquam doloremque in est eos perferendis id magni corporis ipsam quas.
+  <section id="optin">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-8">
+          <p class="lead"><strong>Subscribe to our mailing list.</strong>
+            We'll send something special as a thank you.
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">Click here to subscribe</button>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- BOOST YOUR INCOME -->
@@ -155,13 +169,50 @@
   </footer>
 
   <!-- MODAL -->
-  <div>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+
+          <h4 class="modal-title" id="myModalLabel">
+            <i class="fa fa-envelope"> Subscribe to our Mailing List</i>
+          </h4>
+        </div>
+        
+        <div class="modal-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, reprehenderit? Voluptatem omnis neque molestiae voluptatum vel, iste eius, qui blanditiis, repellendus iusto ipsa facilis illum voluptates consectetur voluptas libero? Fuga!</p>
+
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label for="subscribe-name" class="sr-only">Your first name</label>
+              <input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
+            </div>
+
+            <div class="form-group">
+              <label for="subscribe-email" class="sr-only">Your first name</label>
+              <input type="text" class="form-control" id="subscribe-email" placeholder="Your first name">
+            </div>
+
+            <input type="submit" class="btn btn-danger">
+          </form>
+
+          <hr>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias cumque repellat autem animi porro odit quia, in architecto nemo.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- BOOSTRAP CORE JAVASCRIPT -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="assets/js/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

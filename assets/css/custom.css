@@ -47,8 +47,18 @@ h4 {
   font-size: 1.8rem;
 }
 
+button, input, .btn, a.btn {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: var(--color-white);
+}
+
 .btn {
   font-weight: bold;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* SECTION HERO */
@@ -114,4 +124,18 @@ h4 {
   color: var(--color-white);
   font-weight: bold;
   display: block;
+}
+
+/* ----- SECTION LAYOUT ----- */
+#optin {
+  background: var(--color-blue_gray);
+  padding: 2rem 0;
+  color: var(--color-white);
+  font-size: 1.2em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#optin p {
+  margin: .7rem 0 0 0;
 }
