@@ -11,12 +11,15 @@
   <link rel="icon" href="assets/img/favicon.ico">
 
   <title>Boostrap to wordpress</title>
-  
+
+  <!-- Bootstrap core Css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
   <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700" >
 
   <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- [if lt IE 9]
@@ -28,8 +31,38 @@
 <body>
 
   <!-- HEADER -->
-  <header>
-    romantic
+  <header class="site-header" role="banner">
+    <!-- NAVBAR -->
+    <div class="navbar-wrapper">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          
+          <!-- navbar-header -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- web-logo -->
+            <a class="navbar-brand" href=""><img src="assets/img/logo.png" alt="Bootstrap to WordPress"></a>
+          </div>
+
+         <!-- navbar-collapse  -->
+         <div class="navbar-collapse collapse">
+           <ul class="nav navbar-nav navbar-right">
+             <li class="active"><a href="">Home</a></li>
+             <li><a href="">Blog</a></li>
+             <li><a href="">Resources</a></li>
+             <li><a href="">Contact</a></li>
+           </ul>
+         </div>
+
+        </div>
+      </div>
+    </div>
+    
   </header>
 
   <!-- HERO -->
@@ -89,7 +122,7 @@
 
   <!-- BOOSTRAP CORE JAVASCRIPT -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="/assets/js/jquery-2.1.1.min.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
