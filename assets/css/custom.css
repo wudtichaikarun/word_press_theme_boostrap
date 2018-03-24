@@ -160,3 +160,24 @@ section h3 {
 #who-benefits {
   background: var(--color-white);
 }
+
+/* ----- SECTION FEATURES----- */
+#course-features {
+  background: var(--color-blue_gray);
+  color: var(--color-white);
+  text-align: center;
+}
+/* custom icon sprites */
+i.ci {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  background: url('../img/icon-sprite.png') no-repeat;
+}
+
+.ci.ci-computer  { background-position: 0 0; }
+.ci.ci-watch     { background-position: -4rem 0; }
+.ci.ci-calender  { background-position: -8rem 0; }
+.ci.ci-community { background-position: -12rem 0; }
+.ci.ci-instructor  { background-position: -16rem 0; }
+.ci.ci-device    { background-position: -20rem 0; }
