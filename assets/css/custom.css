@@ -127,6 +127,23 @@ img {
 }
 
 /* ----- SECTION LAYOUT ----- */
+section {
+  padding: 8rem 0;
+}
+
+section h2 {
+  margin: 2rem 0 4rem;
+}
+
+section h3 {
+  margin: 3rem 0 1rem;
+}
+
+.section-header {
+  text-align: center;
+}
+
+
 #optin {
   background: var(--color-blue_gray);
   padding: 2rem 0;
