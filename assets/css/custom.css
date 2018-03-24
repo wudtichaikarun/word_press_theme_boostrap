@@ -181,3 +181,8 @@ i.ci {
 .ci.ci-community { background-position: -12rem 0; }
 .ci.ci-instructor  { background-position: -16rem 0; }
 .ci.ci-device    { background-position: -20rem 0; }
+
+/* ---- SECTION PROJECT FEATURES ----- */
+#project-features {
+  text-align: center;
+}
