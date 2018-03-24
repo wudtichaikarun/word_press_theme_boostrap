@@ -61,7 +61,8 @@ p.lead {
   font-weight: normal;
 }
 
-a:link a:visited {
+
+a:link, a:visited {
   color: var(--color-salmon);
 }
 
