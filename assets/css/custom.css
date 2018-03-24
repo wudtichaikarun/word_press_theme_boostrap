@@ -143,7 +143,6 @@ section h3 {
   text-align: center;
 }
 
-
 #optin {
   background: var(--color-blue_gray);
   padding: 2rem 0;
@@ -155,4 +154,9 @@ section h3 {
 
 #optin p {
   margin: .7rem 0 0 0;
+}
+
+/* ----- SECTION WHO BENEFITS ----- */
+#who-benefits {
+  background: var(--color-white);
 }
