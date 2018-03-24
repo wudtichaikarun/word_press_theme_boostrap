@@ -9,8 +9,12 @@ Blue Gray: #3e4249
   --color-green: #79b044;
   --color-salmon: #dd5638;
   --color-blue_gray: #3e4249;
+  --color-gray: #ccc;
   --color-dark: #101010;
   --color-white: #fff;
+  --color-twitter_bg: #55acee;
+  --color-facebook_bg: #3b5998;
+  --color-gplus_bg: #db4b39;
 }
 html {
   font-size: 62.5%;
@@ -59,6 +63,34 @@ button, input, .btn, a.btn {
 
 img {
   max-width: 100%;
+}
+
+.modal-content {
+  background: url('../img/tile.jpg') top left repeat;
+}
+
+.badge.social {
+  background: var(--color-gray);
+  font-size: 2.4rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  line-height: 4.2rem;
+  margin:  0 .5rem 2rem 0;
+  padding: 0;
+  border-radius: 5rem;
+}
+
+.badge.social.twitter:hover {
+  background: var(--color-twitter_bg);
+}
+
+.badge.social.facebook:hover {
+  background: var(--color-facebook_bg);
+}
+
+.badge.social.gplus:hover {
+  background: var(--color-gplus_bg);
 }
 
 /* SECTION HERO */
@@ -193,4 +225,42 @@ i.ci {
   background-size: cover;
   text-align: center;
   color: var(--color-white);
+}
+
+/* ----- SECTION INSTRUCTOR -----*/
+#instructor {
+  /* 90% is x-positon(90%from left) 1rem is y-position(top) */
+  background: var(--color-white) url('../img/black-cover.png') 90% -2rem no-repeat;
+}
+
+#instructor h2 {
+  margin: 0 0 2rem;
+}
+
+#instructor .num {
+  font-size: 3rem;
+  flex-wrap: bold;
+  color: var(--color-white);
+  height: 14rem;
+  width: 14rem;
+  text-align: center;
+  background: var(--color-gplus_bg);
+  border-radius: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+.num-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2.4rem;
+}
+
+#instructor .num span {
+  display: block;
+  font-size: 2rem;
+  font-weight: normal;
 }
