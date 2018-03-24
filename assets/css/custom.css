@@ -10,6 +10,7 @@ Blue Gray: #3e4249
   --color-dark_green: #6a9b3d;
   --color-salmon: #dd5638;
   --color-blue_gray: #3e4249;
+  --color-gray-dark: #666;
   --color-gray: #ccc;
   --color-gray-light: #ddd;
   --color-dark: #101010;
@@ -280,21 +281,6 @@ section h3 {
   text-align: center;
 }
 
-/* custom icon sprites */
-i.ci {
-  display: inline-block;
-  height: 4rem;
-  width: 4rem;
-  background: url('../img/icon-sprite.png') no-repeat;
-}
-
-.ci.ci-computer  { background-position: 0 0; }
-.ci.ci-watch     { background-position: -4rem 0; }
-.ci.ci-calender  { background-position: -8rem 0; }
-.ci.ci-community { background-position: -12rem 0; }
-.ci.ci-instructor  { background-position: -16rem 0; }
-.ci.ci-device    { background-position: -20rem 0; }
-
 /* ---- SECTION PROJECT FEATURES ----- */
 #project-features {
   text-align: center;
@@ -404,8 +390,8 @@ footer li.signup-link a:hover {
 }
 
 
-/* BLOG */
-.post {
+/* ----- BLOG ---- */
+.post, .widget{
   position: relative;
   border: solid 1px var(--color-gray-light);
   background: var(--color-white);
@@ -479,10 +465,69 @@ footer li.signup-link a:hover {
   background-color: var(--color-gplus_bg);
 }
 
+/* widget */
+.widget {
+  padding: 2rem;
+}
 
+.widget h4 {
+  margin: 0 0 1rem;
+  padding: 0 0 1rem;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget ul li {
+  margin: 0 0 .5rem;
+}
+
+.widget ul li:hover {
+  position: relative;
+  left: 1px;
+}
+
+/* CUSTOM ICON SPRITES */
+i.ci {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  background: url('../img/icon-sprite.png') no-repeat;
+}
+
+.ci.ci-computer  { background-position: 0 0; }
+.ci.ci-watch     { background-position: -4rem 0; }
+.ci.ci-calender  { background-position: -8rem 0; }
+.ci.ci-community { background-position: -12rem 0; }
+.ci.ci-instructor  { background-position: -16rem 0; }
+.ci.ci-device    { background-position: -20rem 0; }
+
+/* ----- FORMS ----- */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: var(--color-gray-dark);
+  border: 1px solid var(--color-gray);
+  border-radius: 3px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+}
 
 /* ----- MEDIA QUERIES ----- */
-
 /* small than 991px */
 @media screen and (max-width: 991px) {
   /* SECTION INSTRUCTOR */
