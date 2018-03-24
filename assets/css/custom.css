@@ -53,6 +53,15 @@ h4 {
   font-size: 1.8rem;
 }
 
+a:link a:visited {
+  color: var(--color-salmon);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-salmon);
+}
+
 button, input, .btn, a.btn {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -310,4 +319,31 @@ i.ci {
 
 #signup h2 strong {
   border-bottom: 2px solid var(--color-gplus_bg);
+}
+
+/* ----- SECTION FOOTER ----- */
+footer {
+  background: var(--color-blue_gray);
+  color: var(--color-white);
+  padding: 2rem 0 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a:link, footer a:visited {
+  color: var(--color-white);
+}
+
+footer a:hover {
+  color: var(--color-salmon);
+}
+
+footer li.signup-link a {
+ color: var(--color-salmon); 
+}
+
+footer li.signup-link a:hover {
+  font-weight: bold;
 }
