@@ -7,6 +7,7 @@ Blue Gray: #3e4249
 /* ----- GENERAL ----- */
 :root {
   --color-green: #79b044;
+  --color-dark_green: #6a9b3d;
   --color-salmon: #dd5638;
   --color-blue_gray: #3e4249;
   --color-gray: #ccc;
@@ -15,6 +16,7 @@ Blue Gray: #3e4249
   --color-twitter_bg: #55acee;
   --color-facebook_bg: #3b5998;
   --color-gplus_bg: #db4b39;
+  --color-oreng_red: #d95131;
 }
 html {
   font-size: 62.5%;
@@ -59,6 +61,25 @@ button, input, .btn, a.btn {
 
 .btn {
   font-weight: bold;
+}
+
+.btn:focus {
+  outline: none !important;
+}
+
+.btn-danger {
+  background-color: var(--color-salmon);
+  border-collapse: var(--color-oreng_red); 
+}
+
+.btn-success {
+  background: var(--color-green) ;
+  border: none;
+}
+
+.btn-success:hover {
+  background: var(--color-dark_green) ;
+  border-color: var(--color-dark_green);
 }
 
 img {
@@ -272,4 +293,21 @@ i.ci {
 
 .testimonial img {
   border-radius: 50%;
+}
+
+/* ----- SECTION SIGN UP ----- */
+#signup {
+  text-align: center;
+  background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+  background-size: cover;
+  color: var(--color-white);
+  padding: 14rem 0;
+}
+
+#signup h2 {
+  font-weight: normal;
+}
+
+#signup h2 strong {
+  border-bottom: 2px solid var(--color-gplus_bg);
 }
