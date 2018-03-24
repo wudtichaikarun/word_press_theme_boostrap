@@ -53,6 +53,14 @@ h4 {
   font-size: 1.8rem;
 }
 
+p {
+  margin: 0 0 1.5rem;
+}
+
+p.lead {
+  font-weight: normal;
+}
+
 a:link a:visited {
   color: var(--color-salmon);
 }
@@ -189,6 +197,10 @@ img {
 }
 
 /* ----- SECTION LAYOUT ----- */
+.row + .row {
+  margin-top: 2rem;
+}
+
 section {
   padding: 8rem 0;
 }
@@ -300,6 +312,10 @@ i.ci {
   margin-bottom: 6rem;
 }
 
+.testimonial .col-sm-4 {
+  text-align: center;
+}
+
 .testimonial img {
   border-radius: 50%;
 }
@@ -346,4 +362,48 @@ footer li.signup-link a {
 
 footer li.signup-link a:hover {
   font-weight: bold;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+/* small than 991px */
+@media screen and (max-width: 991px) {
+  /* SECTION INSTRUCTOR */
+  #instructor .container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+  }
+}
+
+/* small than 768px */
+@media screen and (max-width: 768px) {
+  /* SECTION HERO */
+  .logo {
+    width: 50%;
+  }
+
+  /* SECTION OPTIN */
+  #optin p {
+    margin: 0 0 1rem;
+  }
+
+  /* SECTION FEATURETTE */
+  #featurette iframe {
+    height: 24rem !important;
+  }
+}
+
+/* small than 568px */
+@media screen and (max-width: 568px) {
+  /* section instructor */
+  #instructor .num {
+    height: 10rem;
+    width: 10rem;
+    font-size: 2.2rem;
+  }
+
+  #instructor .num span {
+    font-size: 1.6rem;
+  }
+
 }
