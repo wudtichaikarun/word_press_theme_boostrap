@@ -264,3 +264,12 @@ i.ci {
   font-size: 2rem;
   font-weight: normal;
 }
+
+/* ----- SECTION TESTIMONIALS -----*/
+.testimonial {
+  margin-bottom: 6rem;
+}
+
+.testimonial img {
+  border-radius: 50%;
+}
