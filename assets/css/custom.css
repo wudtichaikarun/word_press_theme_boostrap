@@ -209,6 +209,10 @@ section {
   padding: 8rem 0;
 }
 
+section.main-content {
+  padding: 4rem 0;
+}
+
 section h2 {
   margin: 2rem 0 4rem;
 }
@@ -527,7 +531,19 @@ footer li.signup-link a:hover {
 #leave-comment {
   margin: 4rem 0 0;
   padding: 2rem 0 0;
-  border-top: 1px solid var(--color-gray-dark); 
+  border-top: 1px solid var(--color-gray-light); 
+}
+
+/* ----- RESOURCE ----- */
+.resource {
+  width: 31.33333333%;
+  float: left;
+  margin: 0 3% 4rem 0;
+}
+
+ /* remove margin-right every 3 element */
+.resource:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* CUSTOM ICON SPRITES */
@@ -592,6 +608,13 @@ textarea {
   #featurette iframe {
     height: 24rem !important;
   }
+
+  /* RESOURCE PAGE */
+  .resource {
+    width: 48%;
+    margin-right: 2%;
+    min-height: 80rem;
+  }
 }
 
 /* small than 568px */
@@ -606,5 +629,12 @@ textarea {
   #instructor .num span {
     font-size: 1.6rem;
   }
+
+    /* RESOURCE PAGE */
+    .resource {
+      width: 100%;
+      margin-right: 0;
+      min-height: 0;
+    }
 
 }
