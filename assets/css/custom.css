@@ -391,7 +391,9 @@ footer li.signup-link a:hover {
 
 
 /* ----- BLOG ---- */
-.post, .widget{
+.post, 
+.widget,
+#comments {
   position: relative;
   border: solid 1px var(--color-gray-light);
   background: var(--color-white);
@@ -401,7 +403,8 @@ footer li.signup-link a:hover {
 
 .post header,
 .post .post-excerpt,
-.post .post-body {
+.post .post-body,
+#comments .comments-wrap {
   padding: 2rem;
 }
 
@@ -490,6 +493,41 @@ footer li.signup-link a:hover {
 .widget ul li:hover {
   position: relative;
   left: 1px;
+}
+
+/* ----- POST COMMENTS ----- */
+#comments h3 {
+  text-align: center;
+}
+
+#comments h4 {
+  font-size: 1.3rem;
+}
+
+#comments ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#comments ol li {
+  background: rgba(0, 0, 0, .02);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: .4rem;
+  border: 1px solid rgba(0, 0, 0, .03);
+}
+
+#comments ol li ol.children {
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+}
+
+#leave-comment {
+  margin: 4rem 0 0;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--color-gray-dark); 
 }
 
 /* CUSTOM ICON SPRITES */
